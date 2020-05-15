@@ -38,7 +38,7 @@ public class MoviesApplicationTests {
 		ResponseEntity<String> response = restTemplate.exchange("http://localhost:" + port + "/movies", HttpMethod.GET,
 				entity, String.class);
 
-		Assert.assertEquals(7, movies.size());
+		Assert.assertEquals(6, movies.size());
 	}
 
 	@Test
